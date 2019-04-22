@@ -1,0 +1,366 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Programando com JavaScript</title><meta name="description" content="Programando com JavaScript"><meta name="author" content="Victor Alberto Romero"><meta property="og:type" content="website"><meta property="og:image" content="img/qualy-presenter.png"><meta property="og:description" content="Create your presentations never been so easy with code."><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" type="text/css" href="css/main.css"><link rel="stylesheet" type="text/css" href="css/theme.css"></head><body><div class="reveal"><div class="slides"><style>#cen{text-align:center;}
+#lef{text-align:left;}
+#coy{color: #c8994b}
+
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    }
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style><section><img src="img/js.png" alt="JavaScript" width="500"><h3>Introdução à Programação com JavaScript</h3><p id="cen">Victor Alberto Romero </p><p id="cen">FCTH</p></section><section><section><h3>Linguagens no mundo da computação</h3><p class="fragment">Os seres humanos nos comunicamos a través de linguagens. </p><p class="fragment">A maioria são criadas naturalmente, como o português, mas outras são artificiais.</p><p class="fragment">Entre artificiais mais famosas encontramos as usadas na programação</p></section><section><h3>Linguagens no mundo da computação</h3><div class="fragment"><img src="img/types.png" alt="JavaScript" height="320"><p id="cen">Cada linguagem foi criada com um objetivo específico e tem detalhes a serem estudados</p></div></section><section><h3>Classificação das linguagens</h3><p class="fragment">Existem múltiplas classificações das linguagens computacionais</p><p class="fragment">O grupo maior são as linguagens de programação, mas nem toda linguagem usa-se para programar</p><p class="fragment">Vamos ver o grupos mais comuns (mas tem mais grupos, e mais linguagens em cada grupo)</p></section><section><h3>Tipos de linguagens: </h3><div class="row fragment"><div class="column"><p>Vectoriais e matemáticas</p><div id="lef"><ul><li>Fortran</li><li>Matlab</li><li>Julia</li><li>R</li><li>Wolfram</li></ul></div></div><div class="column"><img src="img/R.jpg" alt="R" height="290" style="margin-top:30px; margin-left:50px"></div></div><div class="row fragment"><div class="column"><p>Linha de comandos</p><div id="lef"><ul><li>DOS</li><li>Bash</li><li>CMD / PowerShell</li></ul></div></div><div class="column"><img src="img/cmd.png" alt="Cmd" height="190" style="margin-top:30px; margin-left:65px"></div></div></section><section><h3>Tipos de linguagens: </h3><div class="row fragment"><div class="column"><p>Propósito geral: Compiladas</p><div id="lef"><ul><li>C/C++/C#</li><li>Basic</li><li>Cobol</li><li>Fortran</li><li>Pascal</li><li>Python</li><li>Java</li></ul></div></div><div class="column"><img src="img/cpp.png" alt="Cpp" height="250" style="margin-top:120px; margin-left:20px"></div></div></section><section><h3>Tipos de linguagens: </h3><div class="row fragment"><div class="column"><p>Propósito geral: Interpretadas</p><div id="lef"><ul><li>Python</li><li>JavaScript</li><li>PHP</li></ul></div></div><div class="column"><img src="img/js_e.png" alt="js" height="250" style="margin-top:20px; margin-left:20px"></div></div><div class="row fragment"><div class="column"><p>De marcas</p><div id="lef"><ul><li>XML</li><li>HTML</li><li>LaTex</li></ul></div></div><div class="column"><img src="img/xml.png" alt="xml" height="250" style="margin-top:20px; margin-left:20px"></div></div></section><section><h3>Tipos de linguagens: </h3><div class="row fragment"><div class="column"><p>Orientados à manipulação de dados</p><div id="lef"><ul><li>SQL</li></ul></div></div><div class="column"><img src="img/SQL.png" alt="SQL" height="250" style="margin-top:20px; margin-left:20px"></div></div><div class="row fragment"><div class="column"><p>De estilos</p><div id="lef"><ul><li>CSS</li></ul></div></div><div class="column"><img src="img/css-ex.png" alt="css-ex" height="250" style="margin-top:20px; margin-left:20px"></div></div></section></section><section><section><h3>O que é programar?</h3><p class="fragment">Descrever como fazer uma tarefa</p><p class="fragment">Por exemplo, programar uma viagem é descrever a sequência de passos que vamos a realizar em dita viagem</p><p class="fragment">Programar contem condições iniciais e objetivos a alcançar</p><p class="fragment">Como é uma sequência de passos, quer dizer que vamos de um ESTADO inicial a um ESTADO final</p></section></section><section><section><h3>Algoritmos</h3><p class="fragment">Algoritmo é o conceito <em>matemático</em>, descreve uma sequência de passos ordenada, mecânica, não ambígua, precisa, eficiente e correta de realizar uma tarefa. (Dasgupta, Papadimitriou e Vazirani, 2010)</p><p class="fragment">O conceito foi formalizado em 1936 por Alan Turing</p><p class="fragment">Ou seja, programar é o ato de IMPLEMENTAR algoritmos</p></section></section><section><section><h3>Que é uma linguagem de programação?</h3><p class="fragment">Neste contexto, uma linguagem de programação é uma convenção ENTRE PESSOAS de como expressar ideias</p><p class="fragment">É em essência uma LINGUAGEM, quer dizer:</p><ul><li class="fragment">Nem todo mundo fala ela, nem teria porque</li><li class="fragment">Posso expressar o mesmo nela ou em outra</li><li class="fragment">Tem linguagens mais cómodas para expressar algumas coisas que outras</li></ul></section><section><h3>Que é uma linguagem de programação?</h3><ul><li class="fragment">Tem sintaxes e semântica. Importa tanto o que eu quero dizer como a forma e as palavras usadas</li><li class="fragment">Tem gramática que pode ser entendida e estudada</li><li class="fragment">Tem varias formas de dizer o mesmo, umas melhores que outras</li><li class="fragment">Tem problemas de ambiguidade</li></ul></section></section><section><section><h3>A linguagem JavaScript</h3><p id="cen">JavaScript para programação web: HTML, CSS e JavaScript.</p></section><section><h3>A linguagem JavaScript</h3><p>Primeiro temos o HTML</p><pre><code class="html">&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;HTML&lt;/title&gt;
+    &lt;/head&gt;
+&lt;body&gt;
+    &lt;h2&gt;Umas imagens com HTML&lt;/h2&gt;
+    &lt;p&gt;HTML está feito para escrever o conteúdo das coisas e dar uma
+    formatada básica. Por exemplo aqui temos um título (tipo h2) e
+    um parágrafo. Também temos umas imagens&lt;/p&gt;
+    &lt;img src="images/HTML5a.jpg" alt="HTML5a"&gt;
+    &lt;img src="images/HTML5b.jpg" alt="HTML5b"&gt;
+    &lt;img src="images/HTML5c.jpg" alt="HTML5c"&gt;
+    &lt;img src="images/HTML5d.jpg" alt="HTML5d"&gt;
+&lt;/body&gt; &lt;/html&gt;
+</code></pre></section><section><h3>A linguagem JavaScript</h3><p>Depois temos o CSS</p><pre><code class="css verbatim">.content {
+    max-width: 1024px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+
+.title {
+    font-size: xx-large;
+    text-align: center;
+    font-family: Georgia;
+    color: #db6630;
+}
+
+.text {
+    font-size: x-large;
+    font-family: Georgia;
+}
+
+.img {
+    border-radius: 10%;
+    border: 2px solid #cc7422;
+    width: 200px;
+    margin-left: 10px;
+}
+
+.container {
+    text-align: center;
+}
+</code></pre></section><section><h3>A linguagem JavaScript</h3><p>Para finalmente ter o JavaScript</p><pre><code class="javascript verbatim">var count = 1;
+var images = ["images/HTML5a.jpg", 
+              "images/HTML5b.jpg", 
+              "images/HTML5c.jpg", 
+              "images/HTML5d.jpg"];
+
+function codigo(){
+    document.getElementById("baseImg").src=images[count];
+    count = (count+1)%4;
+}
+</code></pre></section><section><h3>A linguagem JavaScript</h3><img src="img/tolvards.jpg" alt="Tolvards"></section></section><section><section><h3>Hello World!</h3><p>É costume para os programadores que o primeiro código de teste é um Hello World, então vamos lá</p></section><section><h3>Hello World!</h3><p>O HTML</p><pre><code class="html">&lt;html&gt;
+&lt;body&gt;
+    &lt;script type="text/javascript" src="HelloWorld.js"&gt;
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></section><section><h3>Hello World!</h3><p>O JavaScript. Como é tão simples, não vamos ter CSS</p><pre><code class="javascript">alert('Hello world!');
+</code></pre></section></section><section><section><h3>Começando com JavaScript</h3><p>A partir daqui ignoraremos os arquivos HTML, já que serão simplesmente um arquivo para invocar o JavaScript. Vamos então a fazer um pouco de código</p></section><section><h3>Saída de código</h3><pre><code class="javascript">// As linhas que começam com barra-barra são comentários.
+/*  Também funciona para várias linhas abrindo com barra-estrela  e
+    fechando com estrela-barra. */
+// Os comentários estão no código, mas são ignorados pela máquina,
+// ela simplesmente não vê eles. Então para que usamos eles?  Para
+// a gente se guiar na hora que o código não é claro por sim só.
+// Como os comentários são escritos por pessoas, para pessoas, é bom
+// que eles sejam claros.
+
+// Tem dois jeitos de fazer uma saída de dados, um é com alert:
+alert('Hello world em alert!');
+
+// o outro é com console. Console é bem melhor para ver variáveis
+console.log('Hello world em console!');
+</code></pre></section><section><h3>Hello Pepe!</h3><pre><code class="javascript">// Vamos agora a ver uma entrada de dados:
+name = prompt('Qual é seu nome?');
+
+// Tem dois jeitos de fazer uma saída de dados,
+// um é com alert:
+alert('Bom dia ' + name + '!');
+</code></pre></section></section><section><section><h3>Variáveis em Javacript</h3><p class="fragment">Na linguagem JavaScript precisamos trabalhar com valores.</p><p class="fragment">Estes valores podem ser um nome, um número ou qualquer outro tipo de informação que precisemos. </p><p class="fragment">Para identificar este valores usamos variáveis.</p><p class="fragment">As variáveis de programação são semelhantes às do cálculo, mas estas tem um ESTADO associado, então podemos dizer que são funções do estado.</p></section><section><h3>Números</h3><pre><code class="javascript">// Posso definir números diretamente:
+var num1 = 11;
+var num2 = 45.3;
+
+// Os números em JavaScript sempre são double,
+// então da na mesma:
+var num3 = 5;
+var num4 = 5.0;
+
+// Os números também podem ser resultado de 
+// uma expressão
+var res1 = num1 / 2; 
+var res2 = num2 / res1; 
+
+// E posso ver esse resultado
+console.log(res1);
+console.log(res2);
+
+// JavaScript suporta as 4 operações básicas
+var res = (((4 + 9.1) * 5) - 8)/3;
+console.log("res: " + res);
+</code></pre></section><section><h3>Números</h3><pre><code class="javascript">// Também suporta algumas operações especiais
+
+var res3 =14 % 3  // Este é chamado módulo
+console.log("res3 depois do modulo: " + res3);
+
+res3++;
+console.log("res3 depois do ++: " + res3);
+
+res3--;
+res3--;
+console.log("res3 depois de dois --: " + res3);
+
+// v++ equivale a dizer  v = v + 1
+// v-- equivale a dizer  v = v - 1
+
+// Mas tem um detalhe:
+var x = 5;
+var y = x++;        
+console.log("x: " + x + "  y: " + y);
+
+var x = 5;
+var y = --x;        
+console.log("x: " + x + "  y: " + y);
+</code></pre></section><section><h3>Números</h3><pre><code class="javascript">// Tem vários tipos de atribuição
+var y = 5;
+console.log(y);
+
+y += 5; // y = y + 5
+console.log(y);
+
+y -= 3; // y = y - 3
+console.log(y);
+
+y *= 2; // y = y * 2
+console.log(y);
+
+y /= 2; // y = y / 2
+console.log(y);
+
+y %= 3; // y = y % 3
+console.log(y);
+</code></pre></section></section><section><section><h3>Booleanos</h3><p class="fragment">As variáveis booleanas expressam coisas verdadeiras ou falsas</p><p class="fragment">São usadas para controlar fluxos ou salvar informação binária</p></section><section><h3>Booleanos</h3><pre><code class="javascript">var bool1 = true;
+var bool2 = false;
+
+console.log(bool1);
+console.log(bool2);
+</code></pre></section></section><section><section><h3>Strings</h3><p class="fragment">Os strings (ou cadeias de letras) são o jeito que se tem para guardar texto.</p><p class="fragment">Podem ser tão compridas como seja necessário</p><p class="fragment">Muitas coisas podem ser salvas como strings, mas recomenda-se deixar este tipo de dados só para expressões alfanuméricas</p></section><section><h3>Strings</h3><pre><code class="javascript">// Posso criar string de duas maneiras, 
+// com " e com '
+var str1 = "Olá";
+var str2 = 'tchau';
+
+// Posso imprimir um string
+console.log(str1);
+
+// Também posso operar (somar) strings
+var str3 = str1 + " Pepe.";
+
+console.log(str3);
+
+console.log(str3 + " Agora " + str2 + "!");
+</code></pre></section></section><section><section><h3>Arrays</h3><p class="fragment">Os Arrays são conjuntos de dados ordenados</p><p class="fragment">Podem ser de múltiplos tipos, inclusive podem estar misturados</p></section><section><h3>Arrays</h3><pre><code class="javascript">// Os array são conjuntos de dados ordenados
+var arr1 = ['A', 'B', 'C', 'D'];
+
+// Vamos ver o que ele mostra
+console.log(arr1);
+
+// JavaScript leva a conta dos elementos do array,
+// mas começa a conta em 0. Ou seja, o arr1 tem os
+// elementos A, B, C e D nas posições 0, 1, 2 e 3
+console.log(arr1[2]);
+
+// Podemos também modificar o valor de um array
+arr1[2] = 'Z';
+console.log(arr1);
+
+// Podemos facilmente adicionar ao final dum array
+arr1.push('W');
+arr1.push('Y');
+console.log(arr1);
+
+// Também podemos eliminar um conjunto de elementos
+var indice = 2; 
+var numElementos = 2; 
+arr1.splice(indice, numElementos);
+console.log(arr1);
+
+// Um array pode conter coisas de diferentes tipos
+arr2 = [1, 2, 'oi'];
+console.log(arr2);
+</code></pre></section></section><section><section><h3>Objetos</h3><p class="fragment">Os Objetos são um conceito simples mais poderoso</p><p class="fragment">Eles estão presentes em muitas linguagens, que são conhecidas como orientadas a objetos</p><p class="fragment">Para uma linguagem ser COMPLETAMENTE orientada a objetos, tem que suportar várias propriedades dos objetos</p><p class="fragment">JavaScript é orientada a objetos completa</p><p class="fragment">Vamos focar só nas coisas más básicas</p></section><section><h3>Objetos</h3><pre><code class="javascript">// Podemos simplificar e dizer que um objeto é
+// um array no qual cada coisa tem nome
+
+var obj1 = {nome : "Pepe",
+            idade : 40,
+            gostaFutebol : false};
+
+// Posso mostrar o conteudo do objeto
+console.log(obj1);
+
+// Também posso mostrar só alguma das coisas
+console.log(obj1.nome);
+console.log(obj1.gostaFutebol);
+
+// Objetos são legais para guardar informação 
+// diferente junta
+var obj2 = {nome : "Arnold",
+            idade : 70,
+            gostaFutebol : true};
+
+var objetos = [obj1, obj2];
+
+// Que teria que sair aqui?
+// console.log(objetos[1].nome)
+</code></pre></section></section><section><section><h3>Expressões de controle</h3><p class="fragment">As expressões de controle definem quando um determinado código vai ser executado ou não</p><p class="fragment">Para uma linguagem ser chamada de programação precisa ter expressões de controle.</p><p class="fragment">É aqui que vamos usar as expressões booleanas</p></section><section><h3>Expressões de controle</h3><pre><code class="javascript">var num1 = 5;
+
+// Um if é uma instrução que permite controlar
+// se um código vai ser executado ou não
+console.log("Algo que acontece antes");
+
+if(num1 == 5){
+    console.log("Meu número é igual a 5");
+}
+
+console.log("Algo que acontece depois");
+
+
+// Também posso dizer uma coisa OU outra
+if(num1 == 5){
+    console.log("Meu número é igual a 5");
+}
+else{
+    console.log("Meu número é diferente de 5");
+}
+
+
+// Ou que alguma coisa é diretamente diferente
+if(num1 != 5){
+    console.log("Meu número é diferente de 5");
+}
+
+
+// Tenho outros comparadores
+if(num1 > 5){
+    console.log("Meu número é maior a 5");
+}
+
+if(num1 < 5){
+    console.log("Meu número é menor a 5");
+}
+
+if(num1 >= 5){
+    console.log("Meu número é maior ou igual a 5");
+}
+
+if(num1 <= 5){
+    console.log("Meu número é menor ou igual a 5");
+}
+
+
+// Posso fazer também uma comparação mais profunda
+if(num1 == "5"){
+    console.log("Com um string também funciona!!");
+}
+
+if(num1 === "5"){
+    console.log("Se quero que seja exatamente igual (valor E tipo)");
+}
+else{
+    console.log("Não é exatamente igual");
+}
+
+
+// Finalmente tenho o resto da logica booleana
+var num2 = 7;
+if(num1 == 5 && num2 ==7){
+    console.log("num1 == 5 && num2 ==7");
+}
+if(num1 == 9 || num2 ==7){
+    console.log("num1 == 9 || num2 ==7");
+}
+if(num1 == 5 || num2 ==2){
+    console.log("num1 == 5 || num2 ==2");
+}
+if(!(num1 == 9)){
+    console.log("!(num1 == 9)");
+}
+</code></pre></section></section><section><section><h3>Laços de repetição</h3><p class="fragment">Programar é fundamentalmente um ato de preguiça</p><img class="fragment" src="img/Gates.jpg" alt="" height="450px"></section><section><h3>Laços de repetição</h3><pre><code class="javascript">// Os laços de repetição  permitem realizar sequências
+// repetitivas fácil e rapidamente. Ao invés de
+// escrever muitas coisas, expressamos tudo com lógica
+//
+// WARNING: Temos que garantir que o ciclo para!!!
+
+var num1 = 5;
+while(num1 > 0){
+    console.log("O valor de num1 neste ponto é: " + num1);
+    num1--;
+}
+
+// Para os laços de repetição (para a linguagem todo na
+// verdade) é muito útil ler o código que está escrito
+// "como se fosse português"
+
+// O que faz este código?
+var num2 = 10;
+while(num2 > 0){
+    console.log("O valor de num2 neste ponto é: " + num2);
+
+    if(num2%3 == 0){
+        console.log("Quando me imprimem?");
+    }
+
+    num2--;
+}
+
+
+// É normal que os laços de repetição tenham uma 
+// variável para contar quantas vezes são feitos.
+// Por isso foi criado o laço for
+
+for (i = 0; i < 8; i++){
+    console.log("i: " + i);
+}
+
+// Que acontece se um laço não termina?
+</code></pre></section></section><section><section><h3>Funções</h3><p class="fragment">As funções são ferramentas extremamente poderosas e completam a lista básica de coisas que o JavaScript sabe fazer</p><p class="fragment">As funções em programação são semelhantes as funções matemáticas (em seus usos mais simples)</p><p class="fragment">Aqui uma dica: Se aparece duas vezes, é melhor que vire função</p></section><section><h3>Funções</h3><pre><code class="javascript">// Funções é um jeito de reusar código
+function somaRuim(a, b){
+    var c = a + b +1;
+    console.log("A soma de " + a + " e " + b + " é " + c);
+}
+
+// Criar uma função não é usar ela imediatamente
+// vamos usar nossa função
+
+somaRuim(5, 7);
+
+// As funções também podem retornar coisas
+function somaBoa(a, b){
+    var c = a + b;
+    return c;
+}
+
+// E posso usar esse valor diretamente ou numa variável
+
+var x = 3;
+var y = 7;
+var z = somaBoa(3, 7);
+
+console.log("A soma boa de " + x + " e " + y + " é " + z)
+console.log("A soma ruim de 8 e 9 é " + somaBoa(8, 9))
+</code></pre></section></section></div></div><script src="js/vendor/head.min.js"></script><script src="js/vendor/reveal.js"></script><script src="js/main.js"></script></body></html>
