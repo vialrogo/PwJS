@@ -7,7 +7,7 @@
     para fins do exercicio que exista no programa todo uma única instrução
     console.log
 
-    A fórmula é: Q = a(H + b)^c. Os parámetros são a = 9.9, b = -1.2, c = 1.07.
+    A fórmula é: Q = a*(H + b)^c. Os parámetros são a = 9.9, b = -1.2, c = 1.07.
     O nível é: 2.290, 2.172, 1.989, 1.914, 1.867 e 1.862.
 */
 
