@@ -32,7 +32,7 @@ with open(arquivo, 'r') as csv_file:
             D.append(row[0])
             H.append(row[1])
 
-H = map(float, H)
+H = list(map(float, H))
 
 # a -----------------------------------------------------------------------
 for i in range(10):
@@ -58,10 +58,10 @@ Q = a*((Hm + b)**c)
 print(u'A vazão média total é ' + str(Q))
 
 # por dia
-Qs = map(lambda h: a*((h + b)**c), Hs)
+Qs = list(map(lambda h: a*((h + b)**c), Hs))
 for i, e in enumerate(Qs):
     print(u'A vazão média para o dia ' + str(i+1) + u' é ' + str(e))
 
 # e -----------------------------------------------------------------------
 Qtd = sum(Qs)/len(Qs)
-print(u'Quando calculada pela media das vazões diárias dá: ' + str(Qtd));
+print(u'Quando calculada pela media das vazões diárias dá: ' + str(Qtd))
