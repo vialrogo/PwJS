@@ -36,6 +36,7 @@
     "fs": "0.0.1-security",
     "glob-stream": "^6.1.0",
     "js-yaml": "^3.13.1",
+    "loadsh": "0.0.4",
     "micromatch": "^4.0.2",
     "postcss-svgo": "^4.0.2",
     "svgo": "^1.3.0",
